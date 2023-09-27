@@ -14,7 +14,7 @@ execute_process(COMMAND python2.7 -c "import numpy; print(numpy.get_include())"
                 OUTPUT_STRIP_TRAILING_WHITESPACE)
 include_directories(${NUMPY_INCLUDE_PATH})
 
-## find_package( Boost COMPONENTS python REQUIRED )
+find_package( Boost COMPONENTS python REQUIRED )
 include_directories( ${Boost_INCLUDE_DIR} )
 
 find_package( OpenCV REQUIRED )
